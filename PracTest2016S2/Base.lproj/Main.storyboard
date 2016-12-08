@@ -73,6 +73,9 @@
                                         <state key="normal" title="Sort by Population">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sortByPopulationButtonWithSender:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ADn-md-pRU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

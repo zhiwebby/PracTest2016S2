@@ -146,7 +146,25 @@ class EstateListViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-  
+    @IBAction func sortByPopulationButton(sender: UIButton)
+    {
+        //Sort by ascending order
+        estatesList.sort(by:
+        {
+            a, b -> Bool in
+                return a.population < b.population
+            /*
+             ifa.populate < b.populate
+             {
+                return true
+             }
+             else
+             {
+                return false
+             }
+            */
+        })
+    }
 
 
 

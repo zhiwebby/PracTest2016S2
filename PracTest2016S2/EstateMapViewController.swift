@@ -22,7 +22,7 @@ class EstateMapViewController: UIViewController, CLLocationManagerDelegate {
         
         //MARK: LOCATION
         DataManager.loadEstates ()
-            {
+        {
                 estateListFromFirebase in
                 
                 for estate in estateListFromFirebase
@@ -33,9 +33,17 @@ class EstateMapViewController: UIViewController, CLLocationManagerDelegate {
                     
                     self.mapView.addAnnotation(dropPin)
                 }
-                
+                for pin in self.mapView.annotations
+                {
+                    let annotation = pin as! MapAnnotation
+                    
+                    print(annotation.title!)
+                    print(annotation.subtitle!)
+                    
+                }
                 
         }
+
 
     }
     
